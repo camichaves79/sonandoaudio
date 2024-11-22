@@ -1,0 +1,82 @@
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #ffffff;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.logo img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #FF881F;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+a {
+    color: #FF881F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.waveform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.wave {
+    width: 10px;
+    height: 50px;
+    background-color: #1ED7FF;
+    margin: 0 5px;
+    animation: bounce 1s infinite ease-in-out;
+}
+
+.wave:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.wave:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.wave:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(1.5);
+    }
+}
