@@ -57,7 +57,7 @@ a:hover {
     height: 50px;
     background-color: #1ED7FF;
     margin: 0 5px;
-    animation: bounce 1s infinite ease-in-out;
+    animation: bounce 1.71875s infinite ease-in-out;
 }
 
 .wave:nth-child(2) {
