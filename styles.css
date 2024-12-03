@@ -2,10 +2,10 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
     background-color: #000;
     color: #ffffff;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
 }
 
 .container {
@@ -20,6 +20,8 @@ body, html {
 .logo img {
     width: 150px;
     margin-bottom: 20px;
+    border-radius: 50px;
+    animation: pause-img  3.4375s infinite;
 }
 
 h1 {
@@ -57,7 +59,7 @@ a:hover {
     height: 50px;
     background-color: #1ED7FF;
     margin: 0 5px;
-    animation: bounce 1.71875s infinite ease-in-out;
+    animation: bounce 1.71875s infinite ease-in-out, pause-wave  1.71875s infinite;
 }
 
 .wave:nth-child(2) {
@@ -78,5 +80,25 @@ a:hover {
     }
     50% {
         transform: scaleY(1.5);
+    }
+}
+
+@keyframes pause-wave {
+    0%, 70% {
+        opacity: 1;
+    }
+    70%, 100% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes pause-img {
+    0%, 100% {
+        opacity: 1;
+        box-shadow: 0px 0px 20px 10px #1ED7FF;
+    }
+    50% {
+        opacity: 0.8;
+        box-shadow: 0px 0px 20px 10px #1ed6ff8c;
     }
 }
