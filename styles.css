@@ -7,7 +7,10 @@ html {
     color: #ffffff;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
-    overflow: hidden;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-top: 0.25rem;
 }
 
 .container {
@@ -16,7 +19,14 @@ html {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 20px;
+    padding: 10px;
+    overflow-y: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
 }
 
 .logo img {
@@ -55,6 +65,8 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin: 20px 0;
+    /* background-color: red; */
+    padding-bottom: 1.75rem;
 }
 
 .wave {
@@ -117,12 +129,10 @@ a:hover {
 }
 
 @media screen and (max-width: 400px) {
-    img {
+    .logo img {
         width: 70%;
-
-        /* p {
-        font-size: 14px; 
-        line-height: 1.4; 
-    } */
+    }
+    .waveform {
+        width: 100%;
     }
 }
