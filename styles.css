@@ -40,8 +40,8 @@ html {
 h1 {
     font-size: 2.5rem;
     margin: 10px 0;
-    /* color: #1fff2e; */
-    color: #FF881F;
+    color: #F0AD1F;
+    /* color: #F07A1F; */
 }
 
 p {
@@ -53,7 +53,7 @@ p {
 
 a {
     /* color: #FF881F; */
-    color: #1fff2e;
+    color: #1FF094;
     text-decoration: none;
     font-weight: bold;
 }
